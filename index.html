@@ -36,10 +36,10 @@
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="fas fa-bars"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-5">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-lg-5 gap-sm-3">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
@@ -54,10 +54,54 @@
           </li>
         </ul>
         <div class="nav-icons d-flex ">
-          <button class="btn "><i class="fas fa-user"></i></button>
-          <button class="btn "><i class="fas fa-search"></i></button>
-          <button class="btn "><i class="fas fa-heart"></i></button>
-          <button class="btn "><i class="fas fa-basket-shopping"></i></button>
+          <button class="btn nav-icon "><i class="fas fa-user"></i></button>
+          <button class="btn nav-icon "><i class="fas fa-search"></i></button>
+          <button class="btn nav-icon "><i class="fas fa-heart cart"></i></button>
+
+          <div class="fav-cart">
+            <div class="cart d-flex flex-column justify-content-between">
+              <div class="head d-flex justify-content-between align-items-center">
+                <h3 class="mb-0">favorite</h3>
+                <i class="fas fa-close close"></i>
+              </div>
+              <div class="items">
+                <div class="item">test</div>
+                <div class="item">test</div>
+                <div class="item">test</div>
+                <div class="item">test</div>
+              </div>
+              <div class="links">
+                <a href="cart.html" class="btn">cart</a>
+                <a href="checkout.html" class="btn">checkout</a>
+                <a href="product-comparison.html" class="btn">comparison</a>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn nav-icon "><i class="fas fa-basket-shopping cart"></i></button>
+          <div class="shopping-cart">
+            <div class="cart d-flex flex-column justify-content-between">
+              <div class="head d-flex justify-content-between align-items-center">
+                <h3 class="mb-0">shopping cart</h3>
+                <i class="fas fa-close close"></i>
+              </div>
+              <div class="items">
+                <div class="item">test</div>
+                <div class="item">test</div>
+                <div class="item">test</div>
+                <div class="item">test</div>
+              </div>
+              <div class="total-price d-flex justify-content-between align-items-center">
+                <h4 class="text mb-0">subtotal</h4>
+                <h5 class="cost mb-0">20</h5>
+              </div>
+              <div class="links">
+                <a href="cart.html" class="btn">cart</a>
+                <a href="checkout.html" class="btn">checkout</a>
+                <a href="product-comparison.html" class="btn">comparison</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -119,7 +163,7 @@
         <h3>our products</h3>
       </div>
       <div class="row gy-4">
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4">
           <div class="card">
             <div class="badge sale">-30%</div>
             <div class="more-info  d-flex flex-column justify-content-center align-items-center">
@@ -127,7 +171,7 @@
               <div class="links">
                 <button class="btn share"><i class="fas fa-share-nodes "></i>share</button>
                 <button class="btn compare"><i class="fas fa-code-compare"></i>compare</button>
-                <button class="btn like active"><i class="fas fa-heart "></i>like</button>
+                <button class="btn like "><i class="fas fa-heart "></i>like</button>
               </div>
             </div>
             <div class="card-img hover-scale">
@@ -143,7 +187,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4">
           <div class="card">
             <div class="badge recent">new</div>
             <div class="more-info  d-flex flex-column justify-content-center align-items-center">
@@ -151,7 +195,7 @@
               <div class="links">
                 <button class="btn share"><i class="fas fa-share-nodes "></i>share</button>
                 <button class="btn compare"><i class="fas fa-code-compare"></i>compare</button>
-                <button class="btn like active"><i class="fas fa-heart "></i>like</button>
+                <button class="btn like "><i class="fas fa-heart "></i>like</button>
               </div>
             </div>
             <div class="card-img hover-scale">
@@ -166,7 +210,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4">
           <div class="card">
             <div class="badge sale">-30%</div>
             <div class="more-info  d-flex flex-column justify-content-center align-items-center">
@@ -174,7 +218,7 @@
               <div class="links">
                 <button class="btn share"><i class="fas fa-share-nodes "></i>share</button>
                 <button class="btn compare"><i class="fas fa-code-compare"></i>compare</button>
-                <button class="btn like active"><i class="fas fa-heart "></i>like</button>
+                <button class="btn like "><i class="fas fa-heart "></i>like</button>
               </div>
             </div>
             <div class="card-img hover-scale">
@@ -190,14 +234,14 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4">
           <div class="card">
             <div class="more-info  d-flex flex-column justify-content-center align-items-center">
               <button class="btn add">add to cart</button>
               <div class="links">
                 <button class="btn share"><i class="fas fa-share-nodes "></i>share</button>
                 <button class="btn compare"><i class="fas fa-code-compare"></i>compare</button>
-                <button class="btn like active"><i class="fas fa-heart "></i>like</button>
+                <button class="btn like "><i class="fas fa-heart "></i>like</button>
               </div>
             </div>
             <div class="card-img hover-scale">
@@ -212,7 +256,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4">
           <div class="card">
             <div class="badge recent">new</div>
             <div class="more-info  d-flex flex-column justify-content-center align-items-center">
@@ -220,7 +264,7 @@
               <div class="links">
                 <button class="btn share"><i class="fas fa-share-nodes "></i>share</button>
                 <button class="btn compare"><i class="fas fa-code-compare"></i>compare</button>
-                <button class="btn like active"><i class="fas fa-heart "></i>like</button>
+                <button class="btn like "><i class="fas fa-heart "></i>like</button>
               </div>
             </div>
             <div class="card-img hover-scale">
@@ -235,14 +279,14 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4">
           <div class="card">
             <div class="more-info  d-flex flex-column justify-content-center align-items-center">
               <button class="btn add">add to cart</button>
               <div class="links">
                 <button class="btn share"><i class="fas fa-share-nodes "></i>share</button>
                 <button class="btn compare"><i class="fas fa-code-compare"></i>compare</button>
-                <button class="btn like active"><i class="fas fa-heart "></i>like</button>
+                <button class="btn like "><i class="fas fa-heart "></i>like</button>
               </div>
             </div>
             <div class="card-img hover-scale">
@@ -257,7 +301,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4">
           <div class="card">
             <div class="badge sale">-30%</div>
             <div class="more-info  d-flex flex-column justify-content-center align-items-center">
@@ -265,7 +309,7 @@
               <div class="links">
                 <button class="btn share"><i class="fas fa-share-nodes "></i>share</button>
                 <button class="btn compare"><i class="fas fa-code-compare"></i>compare</button>
-                <button class="btn like active"><i class="fas fa-heart "></i>like</button>
+                <button class="btn like "><i class="fas fa-heart "></i>like</button>
               </div>
             </div>
             <div class="card-img hover-scale">
@@ -281,14 +325,14 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4">
           <div class="card">
             <div class="more-info  d-flex flex-column justify-content-center align-items-center">
               <button class="btn add">add to cart</button>
               <div class="links">
                 <button class="btn share"><i class="fas fa-share-nodes "></i>share</button>
                 <button class="btn compare"><i class="fas fa-code-compare"></i>compare</button>
-                <button class="btn like active"><i class="fas fa-heart "></i>like</button>
+                <button class="btn like "><i class="fas fa-heart "></i>like</button>
               </div>
             </div>
             <div class="card-img hover-scale">
@@ -311,7 +355,103 @@
   </section>
 
 
+  <section class="rooms my-5">
+    <div class="container d-flex flex-wrap">
+      <div class="text">
+        <h2>50+ Beautiful rooms inspiration</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        <a href="" class="btn show-more">explore more</a>
+      </div>
 
+
+      <div class="owl-carousel owl-theme  ">
+        <div class="item">
+          <div class="card">
+            <div class="card-img w-100">
+              <img src="images/room1.png" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="card-img w-100">
+              <img src="images/room2.png" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="card-img w-100">
+              <img src="images/room3.png" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="card-img w-100">
+              <img src="images/room4.png" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="card-img w-100">
+              <img src="images/room5.png" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="card-img w-100">
+              <img src="images/room6.png" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="card-img w-100">
+              <img src="images/room7.png" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="card-img w-100">
+              <img src="images/room8.png" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="card-img w-100">
+              <img src="images/room9.png" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="card-img w-100">
+              <img src="images/room5.png" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="card-img w-100">
+              <img src="images/room1.png" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="card-img w-100">
+              <img src="images/room2.png" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
