@@ -479,7 +479,18 @@ line-height: 150%; /* 1.5rem */
 }
 
 
-
+.rooms .details {
+  position: absolute;
+  bottom: 11%;
+  left: 40%;
+  width: 311px;
+  max-height: 452px;
+  min-height: 452px;
+  padding: 1rem;
+  background-color: #0000005d;
+  transition: .3s;
+  z-index: 22;
+}
 
 
 
